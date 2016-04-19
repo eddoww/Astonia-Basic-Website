@@ -29,7 +29,6 @@ require("config.php");
 <p>Welcome to <?php echo $servername ?> Basic website.</p>
 
 <p>Create an account: <a href="register.php">HERE</a></p>
-<p>Old forum(for old references ;) ): <a href="http://shadowsofastonia.freeforums.net/">HERE</a></p>
 <p>New forum (Use this one): <a href="forum">HERE</a></p>
 <p>Login and create characters: <a href="login.php">HERE</a></p>
 <p>Who is currently online check: <a href="whosonline.php">HERE</a></p>
