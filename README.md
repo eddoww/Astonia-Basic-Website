@@ -20,6 +20,7 @@ $ CD Into your var/www/html folder or any folder you have specifically for the w
 $ git clone git@github.com:eddoww/Astonia-Basic-Website.git Website (requires git installed on the machine)
 $ cd Website
 $ vim config.php (Make the changes to reflect your database/servername here)
+$ Move your create_character script to the web folder for character creation to function
 ```
 
 ## Resources
