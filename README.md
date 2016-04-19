@@ -1,6 +1,11 @@
 #[Astonia Basic Website]
 
 This is a very basic design, with basic account creation/character creation to work with the source files from [Ishtar](http://brockhaus.org/astonia3.html)
+If you want to use this code, please be so kind to leave a small print of credits on the bottom of the page.
+
+Want to buy me a beer for this? Sure! I love beer!
+
+
 
 ## Requirements:
 - PHP >= 5.4
