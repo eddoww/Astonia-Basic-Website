@@ -4,7 +4,7 @@ $stmt = $dbh->prepare('SELECT * FROM charinfo ORDER BY experience DESC LIMIT 0,3
 $stmt->execute();
 $result = $stmt->fetchAll();
 if (isset($topTenExclusionList)) {
-    $result = array_filter($stmt->fetchAll(), function ($value) use ($topTenExclusionList) {
+    $result = array_filter($result, function ($value) use ($topTenExclusionList) {
         return !in_array($value['ID'], $topTenExclusionList);
     });
 }
