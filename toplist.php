@@ -3,47 +3,12 @@ require("config.php");
 $stmt = $dbh->prepare('SELECT * FROM charinfo ORDER BY experience DESC LIMIT 0,34;');
 $stmt->execute();
 $result = $stmt->fetchAll();
-$place = 1;
-foreach ($result as $index => $item)
-{
-    switch ($item['ID'])
-    {
-        case 1:
-            unset($result[$index]);
-            break;
-        case 3:
-            unset($result[$index]);
-            break;
-        case 29:
-            unset($result[$index]);
-            break;
-        case 7:
-            unset($result[$index]);
-            break;
-        case 13:
-            unset($result[$index]);
-            break;
-        case 10:
-            unset($result[$index]);
-            break;
-        case 14:
-            unset($result[$index]);
-            break;
-        case 12:
-            unset($result[$index]);
-            break;
-        case 9:
-            unset($result[$index]);
-            break;
-        case 11:
-            unset($result[$index]);
-            break;
-        case 8:
-            unset($result[$index]);
-            break;
-    }
-    $today = time();
+if (isset($topTenExclusionList)) {
+    $result = array_filter($result, function ($value) use ($topTenExclusionList) {
+        return !in_array($value['ID'], $topTenExclusionList);
+    });
 }
+$place = 1;
 
 ?>
 <!doctype html>
