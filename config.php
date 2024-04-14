@@ -5,6 +5,7 @@ session_start();
 $servername = "Astonia Server";
 $download_location = "/downloads/Astonia_Installer.exe";
 $analytics = "UA-51401830-13"; // Google analytics code, to keep track of people visiting your website EG: "UA-53434830-22"
+$topTenExclusionList = [1];
 
 //Database stuff
 $mysql_hostname = 'localhost';
